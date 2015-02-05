@@ -21,8 +21,8 @@ def add_inv
 		
 		@inventory["00#{next_inv}"] = {'in_stock' => new_stock, 'price'=> new_price, 'brand' => new_brand}
 	
-	puts "Updated Inventory"
-	puts display_inv
+	
+	
 
 end
 
@@ -37,8 +37,8 @@ def del_inv
 	  		else 
 	 end
 
-	 puts "Updated Inventory"
-	 puts display_inv
+	
+	 
   
 end
 
@@ -65,17 +65,19 @@ def change_inv
 		else 
 		end
 
-	puts "Updated Inventory"
-	puts display_inv
+	
+	
 
 end
 
 
 puts "Inventory Time!!!!"
-puts "Current Inventory"
-display_inv
+
+
 
 while true
+	puts "Current Inventory List"
+	display_inv
 	puts "To add a new shoeline to our inventory enter 'A'.
 	If you would like to alter current inventory enter 'C'.
 	To delete an shoeline from inventory enter 'D'.
